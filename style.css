@@ -1,0 +1,42 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background-image: radial-gradient(red, yellow, green);
+  background-attachment: fixed;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  color: blue;
+  text-align: center;
+}
+h1 {
+  font-family: "Roboto, sans-serif";
+  font-size: 3rem;
+}
+.circles {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.circle {
+  width: 100px;
+  height: 100px;
+  background-color: rgb(218, 50, 184);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 1rem;
+}
+.circle.active {
+  background-color: rgb(90, 115, 214);
+
+  background-size: cover;
+  background-position: center;
+  background-image: url(https://images.pexels.com/photos/931177/pexels-photo-931177.jpeg?auto=compress&cs=tinysrgb&w=800);
+}
+button {
+  background-color: rgb(90, 180, 11);
+  border-radius: 10px;
+}
