@@ -4,15 +4,25 @@
   box-sizing: border-box;
 }
 body {
-  background-image: radial-gradient(red, yellow, green);
-  background-attachment: fixed;
+  background-image: url(pexels-alexander.jpg);
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-  color: blue;
   text-align: center;
+  margin-top: 20px;
 }
 h1 {
   font-family: "Roboto, sans-serif";
-  font-size: 3rem;
+  font-size: 4rem;
+  font-weight: bold;
+  font-style: oblique;
+  text-shadow: #ff00ea 1px 0 10px;
+  margin-top: 50px;
+}
+p {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: rgb(7, 61, 84);
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  margin-top: 30px;
 }
 .circles {
   display: flex;
@@ -20,23 +30,40 @@ h1 {
   justify-content: center;
 }
 .circle {
-  width: 100px;
-  height: 100px;
-  background-color: rgb(218, 50, 184);
+  width: 200px;
+  height: 170px;
+  background-image: url(flower.jpg);
   border-radius: 50%;
   display: flex;
   align-items: center;
   justify-content: center;
-  margin: 1rem;
+  margin: 2rem;
+  box-shadow: 10px 10px 10px rgb(78, 2, 72);
 }
 .circle.active {
-  background-color: rgb(90, 115, 214);
-
   background-size: cover;
   background-position: center;
-  background-image: url(https://images.pexels.com/photos/931177/pexels-photo-931177.jpeg?auto=compress&cs=tinysrgb&w=800);
+  background-image: url(https://images.pexels.com/photos/3342739/pexels-photo-3342739.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2);
+}
+.circle:hover {
+  transform: scale(1.5);
 }
 button {
-  background-color: rgb(90, 180, 11);
-  border-radius: 10px;
+  background-color: rgb(67, 172, 176);
+  border-radius: 20px;
+  height: 60px;
+  width: 110px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  margin: 10px;
+  color: rgb(28, 15, 1);
+  font-weight: bold;
+  font-style: italic;
+  font-size: 15px;
+  box-shadow: 10px 10px 10px 10px rgb(50, 100, 97);
+  cursor: pointer;
+}
+button:hover {
+  background-color: rgb(205, 90, 121);
+  transform: rotateY(70deg);
 }

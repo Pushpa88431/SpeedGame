@@ -3,6 +3,7 @@ const endButton = document.querySelector("#endButton");
 const circles = document.querySelectorAll(".circle");
 const scoreDisplay = document.querySelector(".score");
 const audio = new Audio("boom.mp3");
+
 let score = 0;
 let timer;
 let pace = 1000;
@@ -37,8 +38,10 @@ const startGame = () => {
   enableEvents();
   const newActive = pickNew(active);
   circles[newActive].classList.toggle("active");
+  circles[active].classList.remove("active");
 
   active = newActive;
+
   timer = setTimeout(startGame, pace);
   pace -= 10;
   rounds++;
@@ -55,9 +58,9 @@ const endGame = () => {
   clearTimeout(timer);
   resetGame();
 };
+
 const resetGame = () => {
   window.location.reload();
 };
-
 startButton.addEventListener("click", startGame);
 endButton.addEventListener("click", endGame);
