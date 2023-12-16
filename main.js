@@ -2,7 +2,7 @@ const startButton = document.querySelector("#startButton");
 const endButton = document.querySelector("#endButton");
 const circles = document.querySelectorAll(".circle");
 const scoreDisplay = document.querySelector(".score");
-const audio = new Audio("boom.mp3");
+const audio = new Audio("gamesound.mp3");
 
 let score = 0;
 let timer;
