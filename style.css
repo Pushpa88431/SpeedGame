@@ -119,12 +119,12 @@ p {
   width: 110px;
   padding-top: 10px;
   padding-bottom: 10px;
-  margin: 20px;
+  margin: 30px;
   color: rgb(244, 242, 240);
   font-weight: bold;
   font-style: italic;
   font-size: 15px;
-  box-shadow: 10px 10px 10px 10px rgb(50, 100, 97);
+  box-shadow: 3px 3px 3px 3px rgb(50, 100, 97);
   cursor: pointer;
 }
 button:hover {
